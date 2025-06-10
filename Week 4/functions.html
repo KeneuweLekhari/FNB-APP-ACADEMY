@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <h1 id="jsHeader">JavaScript</h1>
+        <p id="addition"></p>
+
+        <script>
+            document.getElementById("addition").innerHTML= addNumbers(10, 7);
+
+            document.getElementById("jsHeader").onclick = function() {
+                if(this.innerHTML=== "JavaScript") {
+                    this.innerHTML = "Is awesome";
+                } else {
+                    this.innerHTML = "JavaScript";
+                }
+            };
+
+            function addNumbers(num1, num2){
+                return num1 + num2;
+            }    
+        </script>
+    </body>
+</html>
